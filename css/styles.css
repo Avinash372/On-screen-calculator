@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(96, 79, 252, 0.082), white);
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 0;
+}
+.numbers > button:last-child {
+  grid-column: span 2;
+  background-color: rgba(11, 129, 21, 0.89);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  height: 600px;
+}
+.display-panel {
+  display: flex;
+  justify-content: end;
+  color: white;
+  border: 5px solid rgb(10, 0, 0);
+  border-radius: 25px 25px 0 0;
+  background-color: rgba(13, 14, 14, 0.1);
+  width: 80%;
+  height: 20%;
+}
+.input-panel {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 80%;
+  border: 5px solid rgb(10, 0, 0);
+  background-color: rgba(106, 106, 136, 0.0822);
+}
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+}
+.operators {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 25%;
+}
+.operators > button:first-child {
+  background-color: red;
+}
